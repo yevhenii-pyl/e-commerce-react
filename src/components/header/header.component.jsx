@@ -2,9 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { auth } from '../../firebase/firebase.utils'
+import { createStructuredSelector } from 'reselect'
 
 import './header.styles.scss'
 import { ReactComponent as Logo } from '../../assets/crown.svg'
+import { selectCardHidden } from '../../redux/card/card.selectors'
+import { selectCurrentUser } from '../../redux/user/user.selector'
 
 import CardIcon from '../card-icon/card-icon.component'
 import CardDropdown from '../card-dropdown/card-dropdown.component'
@@ -36,9 +39,9 @@ const Header = ({ currentUser, hidden }) => {
     )
 }
 
-const mapStateToProps = ({user: { currentUser }, card: { hidden }}) => ({
-    currentUser,
-    hidden
+const mapStateToProps = createStructuredSelector({
+     currentUser: selectCurrentUser,
+     hidden: selectCardHidden
 })
 
 export default connect(mapStateToProps)(Header)
