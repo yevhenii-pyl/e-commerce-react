@@ -5,12 +5,13 @@ import { toggleCardHidden } from '../../redux/card/card.actions'
 
 import './card-icon.styles.scss'
 import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg'
+import { selectCardItemsCount } from '../../redux/card/card.selectors'
 
-const CardIcon = ({ toggleCardHidden }) => {
+const CardIcon = ({ toggleCardHidden, itemCount }) => {
     return (
         <div className="card-icon" onClick={toggleCardHidden}>
             <ShoppingIcon className="shopping-icon"/>
-            <span className="item-count">0</span>
+            <span className="item-count"> { itemCount } </span>
         </div>
     )
 }
@@ -19,4 +20,8 @@ const mapDispatchToProps= dispatch => ({
     toggleCardHidden: () => dispatch(toggleCardHidden())
 })
 
-export default connect(null, mapDispatchToProps)(CardIcon)
+const mapStateToProps = state => ({
+    itemCount: selectCardItemsCount(state)
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(CardIcon)
