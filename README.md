@@ -1,3 +1,3 @@
 technologies I've used:
-React, React Router, Redux, Redux Middleware, Redux DevTools, Firebase, Stripe
+React, React Router, Redux, Redux Thunk, Redux DevTools, Firebase, Stripe
 //styled components
