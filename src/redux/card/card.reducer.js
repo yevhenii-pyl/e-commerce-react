@@ -30,6 +30,11 @@ const cardReducer = ( state=INITIAL_STATE, action) => {
                 ...state, 
                 cardItems: removeItemFromCard(state.cardItems, action.payload)
             }
+        case CardActionTypes.CLEAR_CARD:
+            return{
+                ...state,
+                cardItems: []
+            }
         default:
             return state
     }
