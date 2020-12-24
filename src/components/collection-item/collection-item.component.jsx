@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { connect } from 'react-redux'
 
 import {
@@ -15,7 +15,9 @@ import { addItem } from '../../redux/card/card.actions'
 
 const CollectionItem = ({ item, addItem }) => {
     const { name, price, imageUrl } = item;
-  
+    const [text, setText] = useState('ADD TO CART')
+
+
     return (
       <CollectionItemContainer>
         <BackgroundImage className='image' imageUrl={imageUrl} />
@@ -23,8 +25,11 @@ const CollectionItem = ({ item, addItem }) => {
           <NameContainer>{name}</NameContainer>
           <PriceContainer>{price}</PriceContainer>
         </CollectionFooterContainer>
-        <AddButton onClick={() => addItem(item)} inverted>
-          Add to cart
+        <AddButton onClick={() => {
+          addItem(item)
+          setText('ITEM ADDED')
+        }} inverted>
+          {text}
         </AddButton>
       </CollectionItemContainer>
     );
