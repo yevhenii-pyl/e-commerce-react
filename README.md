@@ -1,4 +1,4 @@
-###E-COMMERCE Project 
+<h1> E-COMMERCE Project </h1>
 
 You can find it live here: [SiteLink](https://e-com-project-live.herokuapp.com/)
 
