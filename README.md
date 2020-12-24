@@ -1,3 +1,17 @@
-technologies I've used:
-React, React Router, Hooks, Redux, Redux Thunk, Redux DevTools, Redux-Saga, Firebase, Stripe
-//styled components
+###E-COMMERCE Project 
+
+You can find it live here: [SiteLink](https://e-com-project-live.herokuapp.com/)
+
+Technologies I've Used:
+
+<ol>
+  <li> :rocket: React  </li>
+  <li> :rocket: React Router  </li>
+  <li> :rocket: Hooks  </li>
+  <li> :rocket: Redux Thunk  </li>
+  <li> :rocket: Redux-Saga  </li>
+  <li> :rocket: Redux DevTools  </li>
+  <li> :rocket: Firebase  </li>
+  <li> :rocket: Stripe  </li>
+  <li> :rocket: Styled Components  </li>
+ </ol>
