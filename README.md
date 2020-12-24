@@ -9,13 +9,13 @@ Technologies I've Used:
 
 <ol>
   <li> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" width="50px" height="50px"/> React </li>
+  <li> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHYiSZ7pgNHIi4X9la9Z1_oHsBpntPBeY6fA&usqp=CAU" width="50px" height="50px"/> Redux </li>
+  <li> <img src="https://img.icons8.com/color/452/firebase.png" width="50px" height="40px"/> Firebase  </li>
   <li> :rocket: React Router  </li>
   <li> :rocket: React Hooks  </li>
-  <li> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHYiSZ7pgNHIi4X9la9Z1_oHsBpntPBeY6fA&usqp=CAU" width="50px" height="50px"/> Redux </li>
   <li> :rocket: Redux DevTools  </li>
   <li> :rocket: Redux Thunk  </li>
   <li> :rocket: Redux-Saga  </li>
-  <li> <img src="https://img.icons8.com/color/452/firebase.png" width="50px" height="50px"/> Firebase  </li>
   <li> :rocket: Stripe  </li>
   <li> :rocket: Styled Components  </li>
  </ol>
