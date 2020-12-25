@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { withRouter } from 'react-router-dom';
 
 import {
     CollectionPreviewContainer,
@@ -24,4 +25,4 @@ const PreviewCollection = ({ title, items, history, match, routeName }) => (
     </CollectionPreviewContainer>
   );
 
-export default PreviewCollection
+export default withRouter(PreviewCollection);
